@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p>As arrays são criadas por meio de um construtor e
+        têm tamanho dinâmico</p>
+    <p id="linha1"></p>
+    <p id="linha2"></p>
+    <p id="linha3"></p>
+    <p id="linha4"></p>
+    <p id="linha5"></p>
+    <script>
+        const cars = ["FIAT", "NISSAN", "BMW"];
+        document.getElementById("linha1").innerHTML = cars;
+        document.getElementById("linha2").innerHTML = cars[0];
+        document.getElementById("linha3").innerHTML = cars[1];
+        document.getElementById("linha4").innerHTML = cars[2];
+        cars[2] = "Renault";
+        document.getElementById("linha5").innerHTML = "Mudei BMW para " + cars[2];
+    </script>
+</body>
+</html>

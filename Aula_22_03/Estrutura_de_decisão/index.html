@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript if .. else</h2>
+    <p>Cumprimentos de acordo com a hora:</p>
+    <p id="demo"></p>
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 12) {
+            greeting = "Bom Dia";
+        } else if (time < 18) {
+            greeting = "Boa Tarde";
+        } else {
+            greeting = "Boa Noite";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+
+</html>

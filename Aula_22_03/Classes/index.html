@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal</title>
+</head>
+
+<body>
+    <script>
+        // Construtor
+        function Animal(tipo, cor, idade) {
+            // Atributos
+            this.tipo = tipo;
+            this.cor = cor;
+            this.idade = idade;
+            // Métodos
+            this.mudaIdade = function (novaIdade) {
+                this.idade = novaIdade;
+            }
+        }
+        // Atributo estático
+        Animal.cores = ["Branco", "Preto", "Malhado"];
+        // Método estático
+        Animal.adicionaCor = function (novaCor) {
+            Carro.cores.push("Tigrado");
+        }
+        // Cria um objeto do tipo Animal
+        let animal = new Animal("gato", "Preto", 2);
+// Imprime os atributos na página. Veja que estamos vendo o
+        // Objeto como um JSON e transformamos ele emstring.
+            document.write(JSON.stringify(animal));
+    </script>
+</body>
+
+</html>

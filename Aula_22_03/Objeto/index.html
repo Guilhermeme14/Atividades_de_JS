@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Objetos</h2>
+    <p>Criando objetos:</p>
+    <p id="pessoa"></p>
+    <p id="animal"></p>
+    <script>
+        var animal = { tipo: "gato", cor: "preto" };
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        document.getElementById("pessoa").innerHTML = person.firstName + " " + person.lastName;
+        animal.cor = "branco";
+        animal.nome = "Felix"; <!-- Adicionar atributo nome dinâmicamente-->
+        document.getElementById("animal").innerHTML = "O pet cujo nome é " + animal.nome +
+            " é da cor " + animal.cor;
+    </script>
+</body>
+
+</html>
